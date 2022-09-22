@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "628793597675",
+    "firebase_url": "https://finance-13d7d-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "finance-13d7d",
+    "storage_bucket": "finance-13d7d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:628793597675:android:4cd2d8c14a07dd610628ae",
+        "android_client_info": {
+          "package_name": "com.hackathon.fipal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "628793597675-niccbejt8dpf7fo43vt8oh0e222f77as.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCj1V-yCrmVVjY1DRQzDwCVfZcIIhgvsKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "628793597675-niccbejt8dpf7fo43vt8oh0e222f77as.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

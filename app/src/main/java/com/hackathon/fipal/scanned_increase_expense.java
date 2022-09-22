@@ -21,6 +21,8 @@ public class scanned_increase_expense extends AppCompatActivity {
 
     public String url;
     public String transmitValue;
+    public static String stext;
+
 
 
 
@@ -35,11 +37,15 @@ public class scanned_increase_expense extends AppCompatActivity {
 
         TextView out = (TextView) findViewById(R.id.billValue);
 
-        String stext = value[1];
+        stext = value[1];
 
-        out.setText(stext);
+        out.setText("Paguat: " + stext + "L");
 
+        float expense = Float.parseFloat(stext);
 
+        dashboard.setexpense(expense);
     }
+
+
 
 }

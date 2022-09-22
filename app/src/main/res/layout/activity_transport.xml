@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#6F88FC"
     tools:context=".transport">
 
     <TextView
@@ -12,7 +13,7 @@
         android:layout_height="60dp"
         android:layout_margin="1dp"
         android:layout_marginTop="72dp"
-        android:background="#9C27B0"
+        android:background="#4869FF"
         android:text="Transport"
         android:textAlignment="center"
         android:textColor="#FFFFFF"

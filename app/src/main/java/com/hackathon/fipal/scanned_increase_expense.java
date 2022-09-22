@@ -37,7 +37,7 @@ public class scanned_increase_expense extends AppCompatActivity {
 
         String stext = value[1];
 
-        out.setText(value[1]);
+        out.setText(stext);
 
 
     }

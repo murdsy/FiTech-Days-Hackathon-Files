@@ -57,6 +57,10 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name" />
+        <activity
+            android:name=".scanned_increase_expense"
+            android:exported="true"
+            android:label="@string/app_name" />
     </application>
 
 </manifest>

@@ -13,6 +13,10 @@ import androidx.core.content.ContextCompat;
 import androidx.lifecycle.LifecycleOwner;
 
 import android.Manifest;
+import android.content.ClipData;
+import android.content.ClipboardManager;
+import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.util.Log;
@@ -34,7 +38,7 @@ public class qr_scanner extends AppCompatActivity {
 
 
     private Button qrCodeFoundButton;
-    private String qrCode;
+    public static String qrCode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,12 +48,16 @@ public class qr_scanner extends AppCompatActivity {
         previewView = findViewById(R.id.activity_main_previewView);
 
         qrCodeFoundButton = findViewById(R.id.activity_main_qrCodeFoundButton);
-        qrCodeFoundButton.setVisibility(View.INVISIBLE);
+
         qrCodeFoundButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), qrCode, Toast.LENGTH_SHORT).show();
                 Log.i(MainActivity.class.getSimpleName(), "QR Code Found: " + qrCode);
+                startActivity(new Intent(qr_scanner.this,scanned_increase_expense.class));
+                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                ClipData clip = ClipData.newPlainText(qrCode, qrCode);
+                clipboard.setPrimaryClip(clip);
             }
         });
 
@@ -58,6 +66,10 @@ public class qr_scanner extends AppCompatActivity {
         requestCamera();
 
 
+    }
+
+    public static String getMyString(){
+        return qrCode;
     }
 
     private void startCamera() {
@@ -93,12 +105,12 @@ public class qr_scanner extends AppCompatActivity {
             @Override
             public void onQRCodeFound(String _qrCode) {
                 qrCode = _qrCode;
-                qrCodeFoundButton.setVisibility(View.VISIBLE);
+
             }
 
             @Override
             public void qrCodeNotFound() {
-                qrCodeFoundButton.setVisibility(View.INVISIBLE);
+
             }
         }));
 

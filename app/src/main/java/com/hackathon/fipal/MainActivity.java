@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        //Declares the variables for clickable areas
+      /*  //Declares the variables for clickable areas
         TextView income_text = (TextView) findViewById(R.id.incomeView);
         TextView goals_text = (TextView) findViewById(R.id.goalsView);
         TextView utilities_text = (TextView) findViewById(R.id.utilitiesView);
@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this,savings.class));
             }
         });
-
+  */
 
         Button start_camera = (Button) findViewById(R.id.scanQR);
 

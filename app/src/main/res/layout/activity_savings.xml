@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".savings">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:layout_margin="1dp"
+        android:layout_marginTop="72dp"
+        android:background="#4CAF50"
+        android:text="Savings"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

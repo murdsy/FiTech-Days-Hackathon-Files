@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -14,6 +15,8 @@ import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
 
 import com.hackathon.fipal.databinding.ActivityMainBinding;
+
+import org.w3c.dom.Text;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,6 +39,58 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+        //Declares the variables for clickable areas
+        TextView income_text = (TextView) findViewById(R.id.incomeView);
+        TextView goals_text = (TextView) findViewById(R.id.goalsView);
+        TextView utilities_text = (TextView) findViewById(R.id.utilitiesView);
+        TextView transport_text = (TextView) findViewById(R.id.transportView);
+        TextView leisure_text = (TextView) findViewById(R.id.leisureView);
+        TextView savings_text = (TextView) findViewById(R.id.savingsView);
+
+        //Methods to send user to different activities
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,income.class));
+            }
+        });
+
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,goals.class));
+            }
+        });
+
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,utilities.class));
+            }
+        });
+
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,transport.class));
+            }
+        });
+
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,leisure.class));
+            }
+        });
+
+        income_text.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,savings.class));
+            }
+        });
+
+        
         Button start_camera = (Button) findViewById(R.id.scanQR);
 
         start_camera.setOnClickListener(new View.OnClickListener() {

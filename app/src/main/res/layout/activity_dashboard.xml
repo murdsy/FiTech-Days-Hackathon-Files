@@ -57,7 +57,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
-                    android:text="Income \n \n \n 123$"
+                    android:clickable="true"
+                    android:text="Income \n \n \n 50000L"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
@@ -71,7 +72,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
-                    android:text="Goals \n \n \n 123$"
+                    android:clickable="true"
+                    android:text="Goals \n \n \n Buy new shoes"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
@@ -97,7 +99,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
-                    android:text="Utilities \n \n \n 123$"
+                    android:clickable="true"
+                    android:text="Utilities \n \n \n 45000L"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
@@ -110,7 +113,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
-                    android:text="Transport \n \n \n 123$"
+                    android:clickable="true"
+                    android:text="Transport \n \n \n 2000L"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
@@ -136,7 +140,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
-                    android:text="Leisure \n \n \n 123$"
+                    android:clickable="true"
+                    android:text="Leisure \n \n \n "
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
                     android:textSize="20dp" />
@@ -149,6 +154,7 @@
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
                     android:backgroundTint="#2A50FF"
+                    android:clickable="true"
                     android:text="Savings \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"

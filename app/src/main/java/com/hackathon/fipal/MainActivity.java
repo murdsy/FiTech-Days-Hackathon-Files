@@ -1,5 +1,7 @@
 package com.hackathon.fipal;
 
+import static com.google.android.gms.common.internal.safeparcel.SafeParcelable.NULL;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -33,63 +35,23 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home,  R.id.navigation_notifications)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_activity_main);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-      /*  //Declares the variables for clickable areas
-        TextView income_text = (TextView) findViewById(R.id.incomeView);
-        TextView goals_text = (TextView) findViewById(R.id.goalsView);
-        TextView utilities_text = (TextView) findViewById(R.id.utilitiesView);
-        TextView transport_text = (TextView) findViewById(R.id.transportView);
-        TextView leisure_text = (TextView) findViewById(R.id.leisureView);
-        TextView savings_text = (TextView) findViewById(R.id.savingsView);
 
-        //Methods to send user to different activities
-        income_text.setOnClickListener(new View.OnClickListener() {
+        Button goDash = (Button) findViewById(R.id.goDashboard);
+
+        goDash.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,income.class));
+                startActivity(new Intent(MainActivity.this, dashboard.class));
             }
         });
 
-        goals_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,goals.class));
-            }
-        });
 
-        utilities_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,utilities.class));
-            }
-        });
-
-        transport_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,transport.class));
-            }
-        });
-
-        leisure_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,leisure.class));
-            }
-        });
-
-        savings_text.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,savings.class));
-            }
-        });
-  */
 
         Button start_camera = (Button) findViewById(R.id.scanQR);
 

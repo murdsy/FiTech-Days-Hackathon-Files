@@ -55,42 +55,42 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        income_text.setOnClickListener(new View.OnClickListener() {
+        goals_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,goals.class));
             }
         });
 
-        income_text.setOnClickListener(new View.OnClickListener() {
+        utilities_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,utilities.class));
             }
         });
 
-        income_text.setOnClickListener(new View.OnClickListener() {
+        transport_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,transport.class));
             }
         });
 
-        income_text.setOnClickListener(new View.OnClickListener() {
+        leisure_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,leisure.class));
             }
         });
 
-        income_text.setOnClickListener(new View.OnClickListener() {
+        savings_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this,savings.class));
             }
         });
 
-        
+
         Button start_camera = (Button) findViewById(R.id.scanQR);
 
         start_camera.setOnClickListener(new View.OnClickListener() {

@@ -46,20 +46,21 @@
                 <TextView
                     android:id="@+id/incomeView"
                     android:layout_width="60dp"
-                    android:layout_height="235dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1"
-                    android:background="#59FF00"
-                    android:backgroundTint="#59FF00"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#4CAF50"
                     android:text="Income: \n \n \n 123$"
                     android:textAlignment="center" />
+
 
                 <TextView
                     android:id="@+id/goalsView"
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#00CDFF"
-                    android:backgroundTint="#00CDFF"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#FFEB3B"
                     android:text="Goals: \n \n \n 123$"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -79,10 +80,10 @@
                 <TextView
                     android:id="@+id/utilitiesView"
                     android:layout_width="60dp"
-                    android:layout_height="235dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1"
-                    android:background="#FF6600"
-                    android:backgroundTint="#FF6600"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#2196F3"
                     android:text="Utilities: \n \n \n 123$"
                     android:textAlignment="center" />
 
@@ -91,7 +92,8 @@
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#C800FF"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#9C27B0"
                     android:text="Transport: \n \n \n 123$"
                     android:textAlignment="center" />
             </LinearLayout>
@@ -111,10 +113,10 @@
                 <TextView
                     android:id="@+id/leisureView"
                     android:layout_width="60dp"
-                    android:layout_height="235dp"
+                    android:layout_height="160dp"
                     android:layout_weight="1"
-                    android:background="#FFC800"
-                    android:backgroundTint="#FFFFC800"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#E91E63"
                     android:text="Leisure: \n \n \n 123$"
                     android:textAlignment="center" />
 
@@ -123,7 +125,8 @@
                     android:layout_width="60dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#FF0000"
+                    android:background="@drawable/layout_bg"
+                    android:backgroundTint="#FF5722"
                     android:text="Savings: \n \n \n 123$"
                     android:textAlignment="center" />
             </LinearLayout>

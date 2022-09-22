@@ -1,2 +1,2 @@
-# lol
- wow such app
+# FiPal
+Cool personal finance app

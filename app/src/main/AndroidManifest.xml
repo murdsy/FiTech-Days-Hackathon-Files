@@ -61,6 +61,13 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".QRCodeFoundListener"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".qr_scanner"
             android:exported="false">
             <meta-data

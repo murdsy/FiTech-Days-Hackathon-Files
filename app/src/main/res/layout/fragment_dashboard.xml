@@ -10,7 +10,7 @@
         android:id="@+id/MainTable"
         android:layout_width="409dp"
         android:layout_height="729dp"
-        android:background="#FFFFFF"
+        android:background="#6F88FC"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -21,16 +21,18 @@
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_margin="10dp"
-            android:background="#FF0000"
-            android:backgroundTint="#FF0000"
+            android:background="#4869FF"
             android:backgroundTintMode="add">
 
             <TextView
                 android:id="@+id/textView"
-                android:layout_width="410dp"
+                android:layout_width="370dp"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
-                android:text="Current Income/Expenses"
+                android:background="#4869FF"
+                android:text="Current Income & Expenses"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
                 android:textAlignment="center"
                 android:textStyle="bold" />
         </TableRow>
@@ -49,12 +51,12 @@
                 <TextView
 
                     android:id="@+id/incomeView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="160dp"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#4CAF50"
+                    android:backgroundTint="#2A50FF"
                     android:text="Income \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -63,12 +65,12 @@
 
                 <TextView
                     android:id="@+id/goalsView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#FFEB3B"
+                    android:backgroundTint="#2A50FF"
                     android:text="Goals \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -89,12 +91,12 @@
 
                 <TextView
                     android:id="@+id/utilitiesView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="160dp"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#2196F3"
+                    android:backgroundTint="#2A50FF"
                     android:text="Utilities \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -102,12 +104,12 @@
 
                 <TextView
                     android:id="@+id/transportView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#9C27B0"
+                    android:backgroundTint="#2A50FF"
                     android:text="Transport \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -128,12 +130,12 @@
 
                 <TextView
                     android:id="@+id/leisureView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="160dp"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#E91E63"
+                    android:backgroundTint="#2A50FF"
                     android:text="Leisure \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"
@@ -141,12 +143,12 @@
 
                 <TextView
                     android:id="@+id/savingsView"
-                    android:layout_width="60dp"
+                    android:layout_width="70dp"
                     android:layout_height="match_parent"
-                    android:layout_margin="1dp"
+                    android:layout_margin="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/layout_bg"
-                    android:backgroundTint="#FF5722"
+                    android:backgroundTint="#2A50FF"
                     android:text="Savings \n \n \n 123$"
                     android:textAlignment="center"
                     android:textColor="#FFFFFF"

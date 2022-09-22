@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"
                 android:background="#4869FF"
-                android:text="Current Income & Expenses"
+                android:text="Current Income \u0026 Expenses"
                 android:textSize="20dp"
                 android:textColor="#FFFFFF"
                 android:textAlignment="center"
